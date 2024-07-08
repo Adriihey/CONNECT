@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/projectconstraint"
+                    android:animateLayoutChanges="true">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/projectpicture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@android:drawable/ic_menu_gallery"
+                            android:layout_gravity="center"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/projectname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="PROJECT NAME"
+                        android:textColor="@color/blue5"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/cardView"
+                        app:layout_constraintStart_toStartOf="@+id/cardView"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/projectname" />
+
+                    <LinearLayout
+                        android:id="@+id/projectlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="5dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view2"
+                        android:orientation="vertical">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PROJECT LOCATION"
+                            android:textSize="13sp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+                        <TextView
+                            android:id="@+id/location_project"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PROJECT LOCATION"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="BIM LEVEL OF DEVELOPMENT"
+                            android:textSize="13sp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+                        <TextView
+                            android:id="@+id/bim_project"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="BIM"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TYPE OF PROJECT"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/type_project"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PROJECT TYPE"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NUMBER OF FLOORS"
+                            android:textSize="13sp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+                        <TextView
+                            android:id="@+id/floors_project"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PROJECT FLOOR NUMBER"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CONSTRUCTION FLOOR ARE (CFA)"
+                            android:textSize="13sp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+                        <TextView
+                            android:id="@+id/cfa_project"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CFA"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PROJECT DESCRIPTION"
+                            android:textSize="13sp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+                        <TextView
+                            android:id="@+id/description_project"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PROJECT DESCRIPTION"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

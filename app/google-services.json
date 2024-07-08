@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "682565538767",
+    "project_id": "engr-app",
+    "storage_bucket": "engr-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682565538767:android:1f53218efc2345b983f8ba",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_vYePGADTUTVvZD9nwqkEwGo8CnjA7_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

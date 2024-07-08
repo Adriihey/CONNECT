@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue5"
+        android:alpha="0.75"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="330dp"
+            android:layout_height="301dp"
+            android:src="@drawable/connect"
+            android:transitionName="trans1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONNECT"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:fontFamily="@font/filthybassline"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="50dp"
+        android:layout_marginBottom="-30dp"
+        android:transitionName="trans2"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:layout_alignParentBottom="true"
+    app:cardCornerRadius="50dp"
+    android:orientation="vertical"
+    android:layout_marginRight="45dp"
+    android:layout_marginLeft="45dp"
+    android:gravity="top">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/flogin"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="LOGIN"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/transparent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        />
+    
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/freg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="REGISTER"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/transparent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
+    
+   
+
+        
+
+
+
+
+ 
+
+</LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
